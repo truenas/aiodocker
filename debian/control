@@ -1,0 +1,29 @@
+Source: python-aiodocker
+Section: python
+Priority: optional
+Maintainer: Waqar Ahmed <waqar@ixsystems.com>
+Build-Depends:
+		debhelper-compat (= 12),
+		dh-python,
+		python3-sphinx,
+		python3-all,
+		python3-setuptools,
+		python3-aiohttp,
+		python3-pygments,
+		python3-yarl
+Standards-Version: 4.5.0
+Homepage: https://github.com/truenas/aiodocker
+
+Package: python3-aiodocker
+Architecture: all
+Depends:
+		python3-sphinx,
+		python3-aiohttp,
+		python3-pygments,
+		python3-typing-extensions,
+		python3-yarl,
+		${misc:Depends},
+		${python3:Depends}
+Description: Asynchronous Docker Python client - Python 3.x
+ This package provides an asynchronous Python client for Docker.
+ This package contains the Python 3.x module.
